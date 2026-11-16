@@ -352,7 +352,15 @@ atualizarContagem();
 setInterval(atualizarContagem, 1000);
 </script>
 
-    <button onclick="abrirCarta()">
+    function abrirCarta() {
+    const carta = document.getElementById("carta");
+    carta.style.display = "block";
+  
+    carta.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
         Ler uma mensagem especial 💌
     </button>
 
@@ -375,17 +383,7 @@ setInterval(atualizarContagem, 1000);
             Com amor,<br>
             Xavier ❤️♥️
         </p>
-        
-       function abrirCarta() {
-    const carta = document.getElementById("carta");
-
-    carta.style.display = "block";
-
-    carta.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-    });
-} 
+    
             Tenho outra surpresa... 🎁
         </button>
     </div>
