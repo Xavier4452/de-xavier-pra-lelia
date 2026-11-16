@@ -376,7 +376,16 @@ setInterval(atualizarContagem, 1000);
             Xavier ❤️♥️
         </p>
 
-        <button onclick="abrirSurpresa()">
+        window.abrirCarta = function() {
+    const carta = document.getElementById("carta");
+
+    carta.style.display = "block";
+
+    carta.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+};
             Tenho outra surpresa... 🎁
         </button>
     </div>
